@@ -1,0 +1,16 @@
+{
+  "name": "kharma_bhoomi",
+  "version": "1.0.0",
+  "description": "it is an app for workers",
+  "main": "1myserver.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "work",
+    "money"
+  ],
+  "author": "vinay",
+  "license": "ISC"
+}

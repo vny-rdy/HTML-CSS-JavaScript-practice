@@ -1,0 +1,60 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>css animations</title>
+    <style>
+        .container{
+            height: 80vh;
+            width: 80vw;
+            background-color: antiquewhite;
+        }
+        .box{
+            height: 40px;
+            width: 40px;
+            background-color: blue;
+            border: 2px solid black;
+            /* font-size: 10px; */
+            /* animation: vnyan;
+            animation-duration: 5s;
+            animation-iteration-count: 4;
+            animation-timing-function: ease-in-out;
+            animation-delay: 1s;
+            animation-direction: reverse;
+            animation-play-state: paused; */
+            animation: vnyan 5s ease-in-out 1s 4 forwards,
+                       v1 4s ease-in 1s 4;
+
+
+            
+            
+        }
+        @keyframes vnyan{
+            from{
+                transform: translateX(10px);
+                background-color: aqua;
+            }
+            to{
+                transform: translateX(1000px);
+                background-color: blueviolet;
+            }
+        }
+        @keyframes v1 {
+            0%{
+                transform: rotate(20deg);
+            }
+            20%{
+                transform: rotate(90deg);
+            }
+            
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box">
+            Box
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FORMS</title>
+</head>
+<body>
+    <h1>Application form for TS Eamcet Exam</h1>
+    <form action="backend.php">
+        <div>
+
+            <label for="name">&emsp;&emsp;&emsp;&emsp;&emsp;Name</label>
+            <input type="text" name="myname" id="name">
+
+            <label for="aadhaar no">&emsp;&emsp;aadhaar no</label>
+            <input type="text" name="myname" id="aadhaar no">
+
+        </div>
+        <br>
+        <div>
+
+            <label for="id">10th Hallticket no</label>
+            <input type="text" name="myid" id="id">
+
+            <label for="date">&emsp;&emsp;date of birth</label>
+            <input type="date" name="mydate" id="date">
+
+        </div>
+        <br>
+        <div>
+
+            <label for="email">&emsp;&emsp;&emsp;&emsp;&emsp;email</label>
+            <input type="email" name="myEmail" id="email">
+
+            <label for="phone number">&emsp;&emsp;phone number</label>
+            <input type="text" name="myPhone number" id="phone number">
+
+        </div>
+        <br>
+        &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;Gender:&nbsp;
+        <label for="Gender">male</label>
+        <input type="radio" name="myGender" id="Gender">
+        <label for="fGender">female</label>
+        <input type="radio" name="myGender" id="fGender">
+        <label for="oGender">other</label>
+        <input type="radio" name="myGender" id="oGender">
+        </div>
+        <br>
+        <div>
+            <label for="eligibility"> Are you eligible?</label>
+            <input type="checkbox" name="myEligibility" id="eligibility">
+        </div>
+
+        <br>
+        <div>
+            <label for="state">select state</label>
+            <select name="mystate" id="state">
+                <option value="TS" selected>TS </option>
+                <option value="AP">AP</option>
+                <option value="other">Other States</option>
+            </select>
+          
+        </div>
+        <br>
+        <div>
+        
+                Submit:<input type="submit" value="Submit">
+               &emsp13;&emsp; Reset:<input type="reset" value="Reset">
+            
+        </div>
+        <div>
+            <label for="feed back">Feed Back:</label>
+            <br> <textarea name="text" id="feed back" cols="50" rows="10"></textarea>
+        </div>
+    </form>
+
+
+</body>
+
+</html>

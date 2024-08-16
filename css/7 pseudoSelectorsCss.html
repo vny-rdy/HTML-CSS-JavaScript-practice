@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport"  content="width=device-width, initial-scale=1.0">
+    <title>pseudo selector </title>
+    <style>
+        a{
+            text-decoration: none;
+            /* color: black; */
+        }
+        a:hover{
+            color: rgb(0, 0, 0);
+            background-color: rgb(236, 11, 210);
+        }
+        a:visited{
+            color: rgb(19, 18, 17);
+            background-color: rgb(219, 30, 30); 
+        }
+        a:active{
+            color: rgb(3, 3, 3);
+            background-color: rgb(228, 212, 212);
+        }
+        .container{
+            border:2px solid black;
+            background-color: antiquewhite;
+            padding: 34px;
+            margin:auto;
+            width: 666px;
+        }
+        .btn{
+            font-family:monospace;
+            font-weight: 600;
+            color: rgb(77, 71, 71);
+            background-color: rgb(253, 129, 226);
+            border: none;
+            cursor: pointer;
+            font-size: 14px;
+            padding:6px;
+            border-radius: 10px;
+        }
+        .btn:hover{
+            color: rgb(9, 9, 9);
+            background-color: rgb(255, 122, 228);
+            /* border: 3px solid rgb(247, 20, 20); */
+        }
+        .btn:visited{
+            color: rgb(19, 18, 17);
+            background-color: rgb(219, 30, 30); 
+        }
+        .btn:active{
+            color: rgb(3, 3, 3);
+            background-color: rgb(228, 212, 212);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container" id="cont1">
+        <h3>heading</h3>
+        <p>Lorem l̥ōipsum dolor sit amet consectetur adipisicing elit. Deleniti, quidem ex sit rerum cum consequatur accusamus quos doloribus cupiditate? Illum ea voluptatum cupiditate error soluta sint dolor ipsa, ipsum odit.</p>
+        <a href="https://www.flipkart.com/" class="btn">Read more</a>
+        <button class="btn">Contact us</button>
+    </div>
+</body>
+
+</html>

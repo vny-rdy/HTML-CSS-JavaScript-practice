@@ -1,0 +1,48 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 23px;
+        }
+        .box{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 45px;
+            width: 45px;
+            border: 2px solid black;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box">Box</div>
+        <div class="box">Box</div>
+        <div class="box">Box</div>
+        <div class="box">Box</div>
+        <div class="box">Box</div>
+    </div>
+    <script>
+        console.log("script is initializing")
+        // let boxes=document.getElementsByClassName("box")
+        let boxes=document.querySelector(".container").children
+        // console.log(boxes)
+        function getRandomColor(){
+            let val1=Math.floor(Math.random()*255)
+            let val2=Math.floor(Math.random()*200)
+            let val3=Math.floor(Math.random()*250)
+            return `rgb(${val1} ${val2} ${val3})`
+        }
+        Array.from(boxes).forEach(e => {
+            // console.log(e)
+            e.style.backgroundColor=getRandomColor()
+        });
+    </script>
+</body>
+</html>
